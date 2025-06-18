@@ -1,0 +1,23 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JD to Resume</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <h1>Paste Job Description Below</h1>
+    <form action="/generate" method="POST">
+      <textarea
+        name="jobDescription"
+        rows="10"
+        cols="50"
+        placeholder="Paste JD here..."
+        required
+      ></textarea>
+      <br />
+      <button type="submit">Generate Resume</button>
+    </form>
+  </body>
+</html>

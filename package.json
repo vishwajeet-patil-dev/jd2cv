@@ -1,0 +1,23 @@
+{
+  "name": "jd2cv",
+  "version": "1.0.0",
+  "description": "JD2CV is a smart, lightweight resume generator built with Node.js and EJS. It takes a job description and your pre-filled data (skills, experience, projects, etc.), processes it using the Gemini API, and outputs a perfectly matched, professionally styled resume in downloadable PDF format.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-personal:vishwajeet-patil-dev/jd2cv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.0"
+  }
+}
