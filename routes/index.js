@@ -4,7 +4,7 @@ const router = require("express").Router();
 router.use("/api/ping", (_, res) => {
   res.send("Pong");
 });
-router.use("/api/resume", generateResume);
+router.post("/api/resume", generateResume);
 router.use("/", (req, res, next) => {
   try {
     res.render("index");

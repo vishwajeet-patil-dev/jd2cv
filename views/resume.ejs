@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><%= resume.name %> - Resume</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #f9fbfd;
+        color: #1f2937;
+      }
+    </style>
+  </head>
+  <body style="max-width: 780px" class="mx-auto p-8 flex flex-col gap-3">
+    <!-- Header -->
+    <header>
+      <h1 class="text-xl font-semibold mb-1"><%= resume.name %></h1>
+      <div
+        class="flex items-center justify-between text-gray-600 text-xs font-medium"
+      >
+        <p><%= resume.title %></p>
+        <div class="flex gap-3">
+          <p><%= resume.location %></p>
+          <p><%= resume.phone %></p>
+          <a
+            href="mailto:<%= resume.email %>"
+            class="text-blue-600 hover:underline"
+            ><%= resume.email %></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Summary -->
+    <section class="flex flex-col gap-2 border-t border-gray-300 pt-2">
+      <h2 class="text-sm font-semibold">Summary</h2>
+      <p class="text-xs text-gray-700 leading-relaxed"><%= resume.summary %></p>
+    </section>
+
+    <!-- Skills -->
+    <section class="flex flex-col gap-2 border-t border-gray-300 pt-2">
+      <h2 class="text-sm font-semibold">Skills</h2>
+      <ul class="list-disc list-inside space-y-1 text-gray-700 text-xs">
+        <% resume.skills.forEach(skill => { %>
+        <li><strong><%= skill.category %>:</strong> <%= skill.items %></li>
+        <% }) %>
+      </ul>
+    </section>
+
+    <!-- Experience -->
+    <section class="flex flex-col gap-2 border-t border-gray-300 pt-2">
+      <h2 class="text-sm font-semibold">Experience</h2>
+      <% resume.experience.forEach(exp => { %>
+      <article class="text-xs">
+        <div class="flex justify-between">
+          <h3 class="font-semibold"><%= exp.role %> | <%= exp.company %></h3>
+          <p class="text-gray-600 italic"><%= exp.period %></p>
+        </div>
+        <ul class="list-disc list-inside text-gray-700">
+          <% exp.responsibilities.forEach(point => { %>
+          <li><%= point %></li>
+          <% }) %>
+        </ul>
+      </article>
+      <% }) %>
+    </section>
+
+    <!-- Projects -->
+    <section class="flex flex-col gap-2 border-t border-gray-300 pt-2">
+      <h2 class="text-sm font-semibold">Projects</h2>
+      <% resume.projects.forEach(project => { %>
+      <article class="text-xs">
+        <h3 class="font-semibold"><%= project.name %></h3>
+        <p class="italic text-gray-600"><%= project.techStack %></p>
+        <ul class="list-disc list-inside text-gray-700">
+          <% project.highlights.forEach(point => { %>
+          <li><%= point %></li>
+          <% }) %>
+        </ul>
+      </article>
+      <% }) %>
+    </section>
+
+    <!-- Education -->
+    <section class="flex flex-col gap-2 border-t border-gray-300 pt-2">
+      <h2 class="text-sm font-semibold">Education</h2>
+      <% resume.education.forEach(edu => { %>
+      <article class="text-xs">
+        <p class="flex justify-between">
+          <strong><%= edu.degree %></strong>
+          <span>— <%= edu.score %></span>
+        </p>
+        <p><%= edu.period %> | <%= edu.institution %></p>
+      </article>
+      <% }) %>
+    </section>
+  </body>
+</html>

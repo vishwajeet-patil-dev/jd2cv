@@ -1,0 +1,73 @@
+{
+  "name": "Saket Patil",
+  "title": "Medical Coder",
+  "location": "Pune, Maharashtra",
+  "phone": "+91 9545929644",
+  "email": "saketpatil9545@gmail.com",
+  "summary": "Immediate joiner based in Pune with hands-on experience as a MERN Stack Developer, having built and delivered multiple real-world projects using Node.js, Express, MongoDB, and React. Skilled in creating scalable RESTful APIs, integrating third-party services, and collaborating in fast-paced team environments. Known for writing clean, maintainable code and quickly adapting to new challenges. Eager to contribute to high-impact backend systems from day one.",
+  "skills": [
+    { "category": "DSA", "items": "With C++" },
+    { "category": "Languages", "items": "JavaScript (ES6+), C++" },
+    {
+      "category": "Frontend",
+      "items": "React.js, NextJs, Vue.js, HTML5, CSS3"
+    },
+    {
+      "category": "Backend",
+      "items": "Node.js, Express.js, RESTful API Development, API Integration (Payment Gateways, CRM etc.)"
+    },
+    { "category": "Databases", "items": "MongoDB, MySQL, Firebase" },
+    {
+      "category": "Soft Skills",
+      "items": "Problem-solving, Team leadership, Excellent communication, Collaboration, Fast learner"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Medical Coder",
+      "company": "Optum Healthcare",
+      "period": "Feb 2023 - Present",
+      "responsibilities": [
+        "Contributed to 10+ full-stack projects, specializing in SaaS platforms, admin dashboards, and document management systems using the MERN stack (MongoDB, Express.js, React.js, Node.js).",
+        "Built reusable components and modules to streamline UI/UX and backend logic, improving development speed and maintainability across multiple projects.",
+        "Led junior developers by offering code reviews, technical guidance, and architectural suggestions to ensure quality deliverables.",
+        "Automated workflows using tools like Puppeteer for WhatsApp messaging, and integrated third-party services like AWS S3, SMTP, and Google Vision API."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "The Docs App – Document & KYC Management SaaS",
+      "techStack": "React.js, Node.js, Express.js, MongoDB, AWS S3, Google Vision API, Socket.IO",
+      "highlights": [
+        "Developed a comprehensive document and KYC management platform with two panels: Company and Contact.",
+        "Key modules include subscription billing, video KYC, webhook automation, OCR document parsing, API integrations, and granular user roles.",
+        "Implemented real-time reminders and notifications, secure file uploads to AWS S3, and dynamic document request workflows.",
+        "Scaled for multi-tenant architecture, enabling seamless onboarding of multiple clients with role-based data access."
+      ]
+    },
+    {
+      "name": "MarsCMS – Custom CMS for Client Websites & Internal Tools",
+      "techStack": "React.js, Next.js, Node.js, Express.js, MongoDB",
+      "highlights": [
+        "Built a flexible content management system for managing landing pages, blogs, services, and product catalogs.",
+        "Included dynamic form builders, SEO controls, and media management capabilities.",
+        "Designed reusable components and backend APIs to support quick deployment of multiple client websites from a single codebase."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Computer Applications (BCA)",
+      "score": "7.8 CGPA",
+      "period": "Jun 2020 - Apr 2023",
+      "institution": "Shivaji University Kolhapur, Maharashtra"
+    },
+    {
+      "degree": "Higher Secondary School (HSC)",
+      "score": "64%",
+      "period": "Apr 2020",
+      "institution": "Maharashtra State Board, Maharashtra"
+    }
+  ]
+}
